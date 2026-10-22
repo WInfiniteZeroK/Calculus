@@ -284,12 +284,12 @@ function makeQuiz(elId,scoreId,items,opts){const el=$(elId),sc=$(scoreId);el.inn
 const Q1=[
  {q:'[0, 5]',a:'Bounded',e:'Every element lies between 0 and 5 (take M = 5).'},
  {q:'(0, ∞)',a:'Unbounded',e:'No upper bound: for any M, the number M + 1 is in the set.'},
- {q:'{ 1/n : n = 1, 2, 3, … }',a:'Bounded',e:'0 < 1/n ≤ 1 for all n.'},
- {q:'ℕ = {1, 2, 3, …}',a:'Unbounded',e:'Bounded below by 1 but not bounded above.'},
- {q:'{ x : x² < 4 }',a:'Bounded',e:'This set is the interval (−2, 2).'},
+ {q:'{ 1/n : n ∈ ℕ* }',a:'Bounded',e:'0 < 1/n ≤ 1 for all n.'},
+ {q:'ℕ* = {1, 2, 3, …}',a:'Unbounded',e:'Bounded below by 1 but not bounded above.'},
+ {q:'{ x ∈ ℝ : x² < 4 }',a:'Bounded',e:'This set is the interval (−2, 2).'},
  {q:'(−∞, 3]',a:'Unbounded',e:'Bounded above by 3, but there is no lower bound.'},
  {q:'{ sin n : n ∈ ℕ }',a:'Bounded',e:'|sin n| ≤ 1 for every n.'},
- {q:'{ x : eˣ < 1 }',a:'Unbounded',e:'This set is (−∞, 0), which has no lower bound.'}];
+ {q:'{ x ∈ ℝ : eˣ < 1 }',a:'Unbounded',e:'This set is (−∞, 0), which has no lower bound.'}];
 const buildQ1=()=>makeQuiz('q1','q1s',Q1,['Bounded','Unbounded']);buildQ1();$('q1r').onclick=buildQ1;
 
 /* ================= SECTION 2 ================= */
